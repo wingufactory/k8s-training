@@ -196,7 +196,7 @@ sudo systemctl enable --now kubelet
 <br>
 
 ```
-wget https://github.com/wingufactory/k8s-training/kubeadm-config.yaml
+wget https://github.com/wingufactory/k8s-training/blob/main/kubeadm-config.yaml
 sudo kubeadm init --config kubeadm-config.yaml
 ```
 <br>

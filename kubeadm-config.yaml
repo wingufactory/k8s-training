@@ -1,0 +1,8 @@
+# kubeadm-config.yaml
+kind: ClusterConfiguration
+apiVersion: kubeadm.k8s.io/v1beta3
+kubernetesVersion: v1.29.0
+controlPlaneEndpoint: "control-plane.wingu-factory.com:6443"
+---
+kind: KubeletConfiguration
+apiVersion: kubelet.config.k8s.io/v1beta1

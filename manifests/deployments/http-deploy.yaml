@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: http-deploy
+  name: http-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: http-deploy
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: http-deploy
+    spec:
+      containers:
+      - image: httpd
+        name: httpd
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
